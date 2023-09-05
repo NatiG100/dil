@@ -6,10 +6,10 @@ export default function(){
     return(
         <nav className="
             w-full fixed top-0 left-0
-            bg-white shadow-md px-16
+            bg-white shadow-md px-16 z-10
         ">
             <div className="
-                    ml-auto mr-auto w-full max-w-7xl h-14
+                    ml-auto mr-auto w-full max-w-7xl h-16
                     flex items-center justify-between
                 "
             >
@@ -21,8 +21,9 @@ export default function(){
                     className="h-14 w-14 bg-blend-difference"
                 />
                 <div className="flex items-center gap-6 text-primary/70 justify-between text-lg h-full">
-                    <NavLink href="#1" >About Us</NavLink>
-                    <NavLink href="#2" >Services</NavLink>
+                    <NavLink href="#aboutUs" >About Us</NavLink>
+                    <NavLink href="#philosophy" >Our Philosophy</NavLink>
+                    <NavLink href="#services" >Services</NavLink>
                     <NavLink href="#3" >Work</NavLink>
                     <NavLink href="#4" >Contact Us</NavLink>
                 </div>
