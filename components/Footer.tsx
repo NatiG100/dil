@@ -13,7 +13,7 @@ export default function Footer(){
                 <div className="flex flex-col md:flex-row w-full justify-center gap-8 md:gap-[7%] py-16 items-center md:items-start">
                     <div className="" data-aos="fade-up">
                         <Image
-                            src="/img/logo.png"
+                            src="/img/logo.PNG"
                             height={500}
                             width={500}
                             alt=""

@@ -24,7 +24,7 @@ export default function AppBar(){
                     "
                 >
                     <Image
-                        src="/img/logo.png"
+                        src="/img/logo.PNG"
                         height={1200}
                         width={1200}
                         alt=""
@@ -74,7 +74,7 @@ export function MobileNavigationModal({show,toggle}:{show:boolean,toggle:()=>voi
         `}>
             <div className="">
                 <Image
-                    src="/img/logo.png"
+                    src="/img/logo.PNG"
                     height={500}
                     width={500}
                     alt=""

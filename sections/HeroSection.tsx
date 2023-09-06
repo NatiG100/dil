@@ -36,7 +36,7 @@ export default function HeroSection(){
                     </ActionLink>
                 </div>
                 <Image
-                    src="/img/logo.png"
+                    src="/img/logo.PNG"
                     height={1200}
                     width={1200}
                     alt=""
