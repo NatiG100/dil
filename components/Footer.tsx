@@ -10,7 +10,7 @@ export default function Footer(){
     return(
         <footer className="w-full h-max shadow-[0_0px_7px_0px_rgba(0,0,0,0.2)]">
             <div className="mx-auto max-w-7xl w-full h-max min-h-full relative top-0 left-o py-8">
-                <div className="flex flex-col md:flex-row w-full justify-center gap-[7%] py-16 items-center md:items-start">
+                <div className="flex flex-col md:flex-row w-full justify-center gap-8 md:gap-[7%] py-16 items-center md:items-start">
                     <div className="">
                         <Image
                             src="/img/logo.png"

@@ -19,7 +19,7 @@ export default function ContactSection(){
                         </p>
                     </div>
                     <div className="flex-col flex gap-6 flex-wrap">
-                        <div className="flex items-center justify-center w-full gap-4">
+                        <div className="flex items-center justify-center w-full gap-4 flex-wrap">
                             <FaPhoneAlt className="text-primary text-2xl"/>
                             <p className="text-white bg-gray-600 p-2 tex-lg rounded-md px-5">+251-911-791-208</p>
                             <p className="text-white bg-gray-600 p-2 tex-lg rounded-md px-5">+251-955-997-385</p>
