@@ -16,17 +16,32 @@ export default function HeroSection(){
                 className="h-screen px-4 md:px-8 lg:px-16 w-full flex items-center justify-center gap-12 md:gap-16 lg:gap-20 flex-col-reverse lg:flex-row"
             >
                 <div className="flex flex-col justify-center items-center lg:block">
-                    <p className="text-2xl md:text-4xl lg:text-6xl text-primary font-bold tracking-widest">DIL Marketing & Events</p>
-                    <p className="text-normal md:text-xl text-2xl font-light tracking-wide">Your Motto here</p>
-                    <ActionLink href="#">Email Us {<BsArrowRight className="animate-pulse"/>}</ActionLink>
+                    <p 
+                        className="text-2xl md:text-4xl lg:text-6xl text-primary font-bold tracking-widest"
+                        data-aos="fade-down-right"
+                    >
+                        DIL Marketing & Events
+                    </p>
+                    <p 
+                        className="text-normal md:text-xl text-2xl font-light tracking-wide"
+                        data-aos="fade-right"
+                    >
+                        Your Motto here
+                    </p>
+                    <ActionLink 
+                        href="#"
+                        data-aos="fade-up-right"
+                    >
+                        Email Us {<BsArrowRight className="animate-pulse"/>}
+                    </ActionLink>
                 </div>
                 <Image
                     src="/img/logo.png"
                     height={1200}
                     width={1200}
                     alt=""
-                    className="w-[70%] md:w-[40%]"
-                    
+                    className="w-[65%] sm:w-[60%] md:w-[40%]"
+                    data-aos="fade-left"
                 />
             </div>
         </Section>

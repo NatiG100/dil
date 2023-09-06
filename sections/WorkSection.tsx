@@ -105,6 +105,7 @@ export default function WorkSection(){
                             width={1200}
                             alt=""
                             className={` ${logo.height?logo.height:"h-36 w-auto"}`}
+                            data-aos="fade-up"
                         />
                     </div>
                 ))}
@@ -127,6 +128,7 @@ export default function WorkSection(){
                                 hover:shadow-sm
                                 transition-all duration-300
                             `}
+                            data-aos="fade-up"
                         />
                     </div>
                 ))}
@@ -150,11 +152,12 @@ export default function WorkSection(){
 interface RecentWorkProps{
     company:string,
     date:string,
-    description:string
+    description:string,
+    idx?:number
 }
-function RecentWork({company,date,description}:RecentWorkProps){
+function RecentWork({company,date,description,idx}:RecentWorkProps){
     return(
-        <div className="w-80 border px-6 py-4 bg-[#f5f5f5] rounded-md flex flex-col items-start justify-center h-36">
+        <div className="w-80 border px-6 py-4 bg-[#f5f5f5] rounded-md flex flex-col items-start justify-center h-36" data-aos="fade-up">
             <p className="text-lg text-primary">{company}</p>
             <p className="text-[#272727] text-lg font-light h-full">{description}</p>
             <p className="text-sm font-light text-[#474747] flex items-center"><BsFillCalendarFill className="inline mr-2 h-full self-center"/>{"  "+date}</p>

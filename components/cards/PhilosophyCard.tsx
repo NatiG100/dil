@@ -4,9 +4,10 @@ export interface PhilosopyCardProps{
     icon:ReactNode,
     text:string,
     title:string,
-    bgMode:"gradient"|"normal"
+    bgMode:"gradient"|"normal",
+    idx:number
 }
-export default function PhilosophyCard({icon,text,title,bgMode}:PhilosopyCardProps){
+export default function PhilosophyCard({icon,text,title,bgMode,idx}:PhilosopyCardProps){
     return(
         <div 
             className={` 
@@ -14,6 +15,8 @@ export default function PhilosophyCard({icon,text,title,bgMode}:PhilosopyCardPro
                 ${bgMode==="gradient"?"from-[#1AB9CF] to-[#1394B4] bg-gradient-to-br from-40% to-90%":"white"}
                 rounded-md shadow-lg border py-8
             `}
+            data-aos="flip-right"
+            data-aos-delay={idx*150}
         >
             {icon}
             <p className={`uppercase text-2xl font-extrabold tracking-widest ${bgMode==="gradient"?"text-white":"text-primary"}`}>{title}</p>

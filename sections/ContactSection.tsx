@@ -9,7 +9,10 @@ export default function ContactSection(){
             <div className="min-h-screen pt-16 w-full grid grid-rows-[max-content,1fr]">
                 <SectionHeader>Contact Us</SectionHeader>
                 <div className="mx-auto h-full w-full max-w-3xl flex items-center justify-center gap-12 flex-col">
-                    <div className="flex-col flex gap-6">    
+                    <div 
+                        className="flex-col flex gap-6"
+                        data-aos="fade-up"
+                    >    
                         <p className="text-5xl text-primary tracking-widest font-semibold text-center">
                             We're here to help!
                         </p>
@@ -18,7 +21,10 @@ export default function ContactSection(){
                             questions or concerns about our services
                         </p>
                     </div>
-                    <div className="flex-col flex gap-6 flex-wrap">
+                    <div 
+                        className="flex-col flex gap-6 flex-wrap"
+                        data-aos="fade-up"
+                    >
                         <div className="flex items-center justify-center w-full gap-4 flex-wrap">
                             <FaPhoneAlt className="text-primary text-2xl"/>
                             <p className="text-white bg-gray-600 p-2 tex-lg rounded-md px-5">+251-911-791-208</p>
@@ -30,7 +36,8 @@ export default function ContactSection(){
                             <p className="text-white bg-gray-600 p-2 tex-lg rounded-md px-5">yafetmeraya@outlook.com</p>
                         </div>
                     </div>
-                   <p className="text-gray-800 text-xl max-w-xl text-center drop-shadow-md tracking-widest">
+                        
+                   <p className="text-gray-800 text-xl max-w-xl text-center drop-shadow-md tracking-widest" data-aos="fade-up">
                         Bole , office no:231,B28 Addis Ababa, Ethiopia
                     </p>
                 </div>

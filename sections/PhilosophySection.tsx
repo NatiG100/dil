@@ -21,6 +21,7 @@ export default function PhilosophySection(){
                             PR, Marketing and event organizing solution.
                         "
                         bgMode="gradient"
+                       idx={0} 
                     />
                     <PhilosophyCard
                         icon={<AiFillEye className="text-[130px] text-primary"/>}
@@ -29,6 +30,7 @@ export default function PhilosophySection(){
                             To be one of the best PR, Marketing and event organizing company in Ethiopia.
                         "
                         bgMode="normal"
+                        idx={1}
                     />
                     <PhilosophyCard
                         icon={<RiMoneyDollarCircleFill className="text-[130px] text-white"/>}
@@ -41,6 +43,7 @@ export default function PhilosophySection(){
                             loveand joy of the event bring toour customers
                         "
                         bgMode="gradient"
+                        idx={2}
                     />
                 </div>
             </div>

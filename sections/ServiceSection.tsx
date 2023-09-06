@@ -83,13 +83,15 @@ export default function ServiceSection(){
                 <div className="h-full w-full pt-6">
                     <hr/>
                         <div className="my-6 flex items-center justify-center gap-4 flex-wrap">
-                            {services.map((service)=>(
+                            {services.map((service,idx)=>(
                                 <ServiceSelector
                                     key={service.id}
                                     icon={service.icon} 
                                     text={service.name}
                                     selected={selected===service.id}
                                     onClick={()=>setSelected(service.id)}
+                                    data-aos="fade-up"
+                                    data-aos-delay={idx*100}
                                 />
                             ))}
                         </div>
@@ -123,7 +125,7 @@ function ServiceSelector({icon,text,selected,...props}:React.ButtonHTMLAttribute
 
 function ServiceDetail(service:TypeService&{className?:string}){
     return (
-        <div className={`w-full py-11 flex flex-col-reverse items-center lg:flex-row justify-center lg:items-start gap-8 ${service.className}`}>
+        <div className={`w-full py-11 flex flex-col-reverse items-center lg:flex-row justify-center lg:items-start gap-8 ${service.className}`} data-aos="fade-up">
             <div className="w-[410px] max-w-[80%]">
                 <h1 className="text-3xl text-primary tracking-wide">{service.name}</h1>
                 <ul>

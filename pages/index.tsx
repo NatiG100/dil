@@ -8,12 +8,20 @@ import ServiceSection from '@/sections/ServiceSection'
 import WorkSection from '@/sections/WorkSection'
 import ContactSection from '@/sections/ContactSection'
 import Footer from '@/components/Footer'
+import {useEffect} from 'react'
+import AOS from 'aos'
+import "aos/dist/aos.css";
+
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  useEffect(()=>{
+    AOS.init({duration:1000,anchorPlacement:"bottom-center"})
+    AOS.refresh();
+  },[])
   return (
-    <div className='block h-screen'>
+    <div className='block h-screen '>
       <AppBar/>
       <HeroSection/>
       <AboutUsSection/>
