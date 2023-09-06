@@ -10,9 +10,9 @@ export default function PhilosophyCard({icon,text,title,bgMode}:PhilosopyCardPro
     return(
         <div 
             className={` 
-                h-full max-h-[580px] w-[360px] px-9 flex flex-col items-center justify-center gap-6
+                max-w-[85%] h-full max-h-[500px] lg:max-h-[580px] w-[320px] xl:w-[360px] px-9 flex flex-col items-center justify-center gap-6
                 ${bgMode==="gradient"?"from-[#1AB9CF] to-[#1394B4] bg-gradient-to-br from-40% to-90%":"white"}
-                rounded-md shadow-lg border
+                rounded-md shadow-lg border py-8
             `}
         >
             {icon}

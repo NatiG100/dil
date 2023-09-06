@@ -17,11 +17,11 @@ export default function Home() {
       <AppBar/>
       <HeroSection/>
       <AboutUsSection/>
-      {/* <PhilosophySection/>
-      <ServiceSection/>
-      <WorkSection/>
-      <ContactSection/>
-      <Footer/> */}
+      <PhilosophySection/>
+      {/* <ServiceSection/> */}
+      {/* <WorkSection/> */}
+      {/* <ContactSection/> */}
+      {/* <Footer/> */}
     </div>
   )
 }
