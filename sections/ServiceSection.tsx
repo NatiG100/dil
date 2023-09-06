@@ -78,11 +78,11 @@ export default function ServiceSection(){
     const [selected,setSelected] = useState(services[0].id)
     return(
         <Section id="services" className="bg-background">
-            <div className="min-h-screen pt-16  w-full grid grid-rows-[max-content,1fr]">
+            <div className="min-h-screen pt-16  w-full px-4 md:px-8 lg:px-16">
                 <SectionHeader>Services</SectionHeader>
                 <div className="h-full w-full pt-6">
                     <hr/>
-                        <div className="m-6 flex items-center justify-center gap-4">
+                        <div className="my-6 flex items-center justify-center gap-4 flex-wrap">
                             {services.map((service)=>(
                                 <ServiceSelector
                                     key={service.id}
@@ -109,13 +109,13 @@ function ServiceSelector({icon,text,selected,...props}:React.ButtonHTMLAttribute
         <button
             {...props}
             className={`
-                w-56 p-4 py-6 flex flex-col items-center justify-center gap-4 border
+                w-28 lg:w-56 p-4 py-6 flex flex-col items-center justify-center gap-1 lg:gap-4 border
                 ${selected?"bg-primary text-white":"bg-white text-[#474747] hover:border-primary/50"} 
-                transition-all duration-300 rounded-lg
+                transition-all duration-300 rounded-lg h-28 lg:h-36
             `}
             disabled={selected}
         >
-            <span className={`text-5xl ${selected?"text-white":"text-primary transition-all duration-300"} `}>{icon}</span>
+            <span className={`text-xl lg:text-5xl ${selected?"text-white":"text-primary transition-all duration-300"} `}>{icon}</span>
             <p className="text-lg tracking-wide">{text}</p>
         </button>
     )
@@ -123,9 +123,9 @@ function ServiceSelector({icon,text,selected,...props}:React.ButtonHTMLAttribute
 
 function ServiceDetail(service:TypeService&{className?:string}){
     return (
-        <div className={`w-full py-11 flex justify-center items-start gap-8 ${service.className}`}>
-            <div className="w-[410px]">
-                <h1 className="text-3xl text-primary tracking-wide my-3">{service.name}</h1>
+        <div className={`w-full py-11 flex flex-col-reverse items-center lg:flex-row justify-center lg:items-start gap-8 ${service.className}`}>
+            <div className="w-[410px] max-w-[80%]">
+                <h1 className="text-3xl text-primary tracking-wide">{service.name}</h1>
                 <ul>
                     {service.list.map((item,idx)=>(
                         <p key={idx} className="text-xl text-[#272727] font-light flex items-start">
@@ -140,7 +140,7 @@ function ServiceDetail(service:TypeService&{className?:string}){
                 height={1200}
                 width={1200}
                 alt=""
-                className=" w-[40%] border-8 border-white shadow-lg"
+                className=" w-[80%] md:w-[40%] border-8 border-white shadow-lg"
             />
         </div>
     )

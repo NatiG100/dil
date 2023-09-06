@@ -11,7 +11,7 @@ export default function PhilosophySection(){
         <Section id="philosophy" className="bg-white">
             <div className="min-h-screen pt-16  w-full grid grid-rows-[max-content,1fr] px-4 md:px-8 lg:px-16">
                 <SectionHeader>OUR PHILOSOPHY</SectionHeader>
-                <div className="h-full w-full flex flex-col lg:flex-row items-center justify-center gap-4 lg:flex-wrap mt-6">
+                <div className="h-max min-h-screen w-full flex flex-col lg:flex-row items-center justify-center gap-4 lg:flex-wrap mt-6">
                     <PhilosophyCard
                         icon={<PiLightbulbFilamentFill className="text-[130px] text-white"/>}
                         title="mission"
