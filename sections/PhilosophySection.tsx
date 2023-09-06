@@ -9,7 +9,7 @@ import {RiMoneyDollarCircleFill} from 'react-icons/ri'
 export default function PhilosophySection(){
     return(
         <Section id="philosophy" className="bg-white">
-            <div className="h-full w-full grid grid-rows-[max-content,1fr]">
+            <div className="min-h-screen pt-16  w-full grid grid-rows-[max-content,1fr]">
                 <SectionHeader>OUR PHILOSOPHY</SectionHeader>
                 <div className="h-full w-full flex items-center justify-center gap-12">
                     <PhilosophyCard

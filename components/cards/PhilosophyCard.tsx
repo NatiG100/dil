@@ -16,8 +16,8 @@ export default function PhilosophyCard({icon,text,title,bgMode}:PhilosopyCardPro
             `}
         >
             {icon}
-            <p className={`uppercase text-2xl font-bold tracking-widest ${bgMode==="gradient"?"text-white":"text-primary"}`}>{title}</p>
-            <p className={`text-xl drop-shadow-sm text-center ${bgMode==="gradient"?"text-[#ebebeb]":"text-[#575757]"}`}>{text}</p>
+            <p className={`uppercase text-2xl font-extrabold tracking-widest ${bgMode==="gradient"?"text-white":"text-primary"}`}>{title}</p>
+            <p className={`text-lg drop-shadow-sm text-center ${bgMode==="gradient"?"text-white":"text-gray-600"}`}>{text}</p>
         </div>
     )
 }

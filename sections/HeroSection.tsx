@@ -13,7 +13,7 @@ export default function HeroSection(){
             }
         >
             <div 
-                className="h-full w-full flex items-center justify-center gap-20"
+                className="h-screen px-16 w-full flex items-center justify-center gap-20"
             >
                 <div className="">
                     <p className="text-6xl text-primary font-bold">DIL Marketing & Events</p>

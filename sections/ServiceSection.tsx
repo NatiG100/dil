@@ -78,7 +78,7 @@ export default function ServiceSection(){
     const [selected,setSelected] = useState(services[0].id)
     return(
         <Section id="services" className="bg-background">
-            <div className="h-full w-full grid grid-rows-[max-content,1fr]">
+            <div className="min-h-screen pt-16  w-full grid grid-rows-[max-content,1fr]">
                 <SectionHeader>Services</SectionHeader>
                 <div className="h-full w-full pt-6">
                     <hr/>

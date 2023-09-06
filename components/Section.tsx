@@ -7,10 +7,10 @@ export default function Section({
     return(
         <section 
             id={id}
-            className={`h-full max-h-max px-14 pt-16 ${className}`}
+            className={`h-max min-h-full px-14 ${className}`}
         >
             {overlay}
-            <div className="mx-auto max-w-7xl w-full h-full relative top-0 left-o">
+            <div className="mx-auto max-w-7xl w-full h-max min-h-full relative top-0 left-o py-8">
                 {children}
             </div>
         </section>

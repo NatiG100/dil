@@ -24,15 +24,15 @@ export default function(){
                     <NavLink href="#aboutUs" >About Us</NavLink>
                     <NavLink href="#philosophy" >Our Philosophy</NavLink>
                     <NavLink href="#services" >Services</NavLink>
-                    <NavLink href="#3" >Work</NavLink>
-                    <NavLink href="#4" >Contact Us</NavLink>
+                    <NavLink href="#work" >Work</NavLink>
+                    <NavLink href="#contact" >Contact Us</NavLink>
                 </div>
             </div>
         </nav>
     )
 }
 
-function NavLink({href,children}:{href:string,children:ReactNode}){
+export function NavLink({href,children}:{href:string,children:ReactNode}){
     return(
         <Link 
             href={href} 
