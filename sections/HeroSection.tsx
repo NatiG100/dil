@@ -13,11 +13,11 @@ export default function HeroSection(){
             }
         >
             <div 
-                className="h-screen px-16 w-full flex items-center justify-center gap-20"
+                className="h-screen px-4 md:px-8 lg:px-16 w-full flex items-center justify-center gap-12 md:gap-16 lg:gap-20 flex-col-reverse lg:flex-row"
             >
-                <div className="">
-                    <p className="text-6xl text-primary font-bold">DIL Marketing & Events</p>
-                    <p className="text-2xl font-light tracking-wide">Your Motto here</p>
+                <div className="flex flex-col justify-center items-center lg:block">
+                    <p className="text-2xl md:text-4xl lg:text-6xl text-primary font-bold tracking-widest">DIL Marketing & Events</p>
+                    <p className="text-normal md:text-xl text-2xl font-light tracking-wide">Your Motto here</p>
                     <ActionLink href="#">Email Us {<BsArrowRight className="animate-pulse"/>}</ActionLink>
                 </div>
                 <Image
@@ -25,7 +25,7 @@ export default function HeroSection(){
                     height={1200}
                     width={1200}
                     alt=""
-                    className="w-[40%]"
+                    className="w-[70%] md:w-[40%]"
                     
                 />
             </div>

@@ -11,6 +11,7 @@ export default function(){
             <div className="
                     ml-auto mr-auto w-full max-w-7xl h-16
                     flex items-center justify-between
+
                 "
             >
                 <Image

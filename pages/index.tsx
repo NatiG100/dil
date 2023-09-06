@@ -16,12 +16,12 @@ export default function Home() {
     <div className='block h-screen'>
       <AppBar/>
       <HeroSection/>
-      <AboutUsSection/>
+      {/* <AboutUsSection/>
       <PhilosophySection/>
       <ServiceSection/>
       <WorkSection/>
       <ContactSection/>
-      <Footer/>
+      <Footer/> */}
     </div>
   )
 }
