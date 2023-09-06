@@ -67,11 +67,11 @@ export function MobileNavigationModal({show,toggle}:{show:boolean,toggle:()=>voi
     return(
         <nav className={`
             fixed top-0 left-0 h-full w-screen 
-            ${show?"opacity-100 top-0":"-top-full opacity-50"} 
+            ${show?"opacity-100 top-0":"top-[-100%] opacity-50"} 
             transition-all duration-300 bg-white z-30
             flex flex-col px-20 justify-center items-center
             gap-8 overflow-hidden
-        `}>
+        `} >
             <div className="">
                 <Image
                     src="/img/logo.PNG"

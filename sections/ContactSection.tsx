@@ -6,7 +6,7 @@ import {IoMailSharp} from 'react-icons/io5'
 export default function ContactSection(){
     return(
         <Section id="contact" className="bg-background">
-            <div className="min-h-screen pt-16 w-full grid grid-rows-[max-content,1fr]">
+            <div className="min-h-screen pt-16 w-full grid grid-rows-[max-content,1fr] px-3">
                 <SectionHeader>Contact Us</SectionHeader>
                 <div className="mx-auto h-full w-full max-w-3xl flex items-center justify-center gap-12 flex-col">
                     <div 
