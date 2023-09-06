@@ -5,7 +5,7 @@ import {TfiMenu} from 'react-icons/tfi'
 import {AiFillCloseCircle} from 'react-icons/ai'
 import {useState} from 'react'
 
-export default function(){
+export default function AppBar(){
     const [show,setShow] = useState(false)
     function toggleVisibility(){
         setShow((show)=>(!show))
