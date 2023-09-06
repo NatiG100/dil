@@ -20,8 +20,8 @@ export default function Home() {
       <PhilosophySection/>
       <ServiceSection/>
       <WorkSection/>
-      {/* <ContactSection/> */}
-      {/* <Footer/> */}
+      <ContactSection/>
+      <Footer/>
     </div>
   )
 }
