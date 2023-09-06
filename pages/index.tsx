@@ -16,8 +16,8 @@ export default function Home() {
     <div className='block h-screen'>
       <AppBar/>
       <HeroSection/>
-      {/* <AboutUsSection/>
-      <PhilosophySection/>
+      <AboutUsSection/>
+      {/* <PhilosophySection/>
       <ServiceSection/>
       <WorkSection/>
       <ContactSection/>
