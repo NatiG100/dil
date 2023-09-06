@@ -87,41 +87,48 @@ export default function WorkSection(){
         setMore((more)=>(!more))
     }
     return(
-        <Section id="work" className="pt-16">
+        <Section id="work" className="pt-16 px-4">
             <SectionHeader>work</SectionHeader>
-            <p className="my-6 text-2xl tracking-wider text-primary drop-shadow-sm">Recent Work</p>
-            <div className="grid grid-cols-3 grid-rows-3 justify-center mx-auto w-max gap-6 my-12">
+            <p className="my-6 text-2xl tracking-wider text-primary drop-shadow-sm ml-5">Recent Work</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 xl:grid-rows-3 justify-center mx-auto w-max gap-6 my-12">
                 {recentWorks.map((recentWork,idx)=>(
                     <RecentWork key={idx} {...recentWork}/>
                 ))}
             </div>
-            <p className="my-6 text-2xl tracking-wider text-primary drop-shadow-sm">Companies we worked with</p>
-            <div className="justify-center mx-auto gap-6 my-12  items-center grid grid-cols-3 w-full px-12 py-16">
-                {companyLogos.map((logo)=>(
-                    <Image
-                        src={logo.img}
-                        height={1200}
-                        width={1200}
-                        alt=""
-                        className={` ${logo.height?logo.height:"h-36"} w-auto self-center`}
-                    />
+            <p className="my-6 text-2xl tracking-wider text-primary drop-shadow-sm ml-5">Companies we worked with</p>
+            <div className="justify-center mx-auto gap-6 my-12  grid-cols-1 md:grid-cols-2  grid lg:grid-cols-3 w-full px-12 lg:py-16">
+                {companyLogos.map((logo,idx)=>(
+                    <div key={idx} className="w-full justify-center flex my-9">
+                        <Image
+                            src={logo.img}
+                            height={1200}
+                            width={1200}
+                            alt=""
+                            className={` ${logo.height?logo.height:"h-36 w-auto"}`}
+                        />
+                    </div>
                 ))}
             </div>
-            <p className="my-6 text-2xl tracking-wider text-primary drop-shadow-sm">Branding & Creative design</p>
-            <div className="justify-center mx-auto gap-6 my-12  items-center grid grid-cols-4 w-full px-12">
-                {(more?designs:designs.slice(0,8)).map((logo)=>(
-                    <Image
-                        src={logo.img}
-                        height={1200}
-                        width={1200}
-                        alt=""
-                        className={` 
-                            h-64 w-64 object-cover hover:scale-105
-                            self-center rounded-md overflow-hidden border 
-                            hover:shadow-sm
-                            transition-all duration-300
-                        `}
-                    />
+            <p className="my-6 text-2xl tracking-wider text-primary drop-shadow-sm ml-5">Branding & Creative design</p>
+            <div className="
+                justify-center mx-auto gap-6 my-12  items-center
+                grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-full px-12
+            ">
+                {(more?designs:designs.slice(0,8)).map((logo,idx)=>(
+                    <div key={idx} className="w-full justify-center flex">
+                        <Image
+                            src={logo.img}
+                            height={1200}
+                            width={1200}
+                            alt=""
+                            className={` 
+                                h-64 w-64 object-cover hover:scale-105
+                                self-center rounded-md overflow-hidden border 
+                                hover:shadow-sm
+                                transition-all duration-300
+                            `}
+                        />
+                    </div>
                 ))}
             </div>
             <hr/>
