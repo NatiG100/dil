@@ -17,7 +17,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   useEffect(()=>{
-    AOS.init({duration:1000,anchorPlacement:"bottom-center"})
+    AOS.init({duration:1000,anchorPlacement:"bottom-center",offset:200})
     AOS.refresh();
   },[])
   return (
