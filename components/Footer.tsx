@@ -40,7 +40,7 @@ export default function Footer(){
                         <li className="flex gap-2 justify-center md:justify-start"><FaLocationDot className="shrink-0 mt-2 text-sm"/>Bole , office no:231,B28 Addis Ababa, Ethiopia</li>
                     </ul>
                 </div>
-                <hr/>
+                <hr className="mx-2"/>
                 <p className="text-center w-full text-sm font-light tracking-widest my-3 mt-4 text-[#006882]">
                     Copyright © 2023 Dil Marketing & Events. All rights reserved
                 </p>

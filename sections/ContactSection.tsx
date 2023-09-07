@@ -25,12 +25,12 @@ export default function ContactSection(){
                         className="flex-col flex gap-6 flex-wrap"
                         data-aos="fade-up"
                     >
-                        <div className="flex items-center justify-center w-full gap-4 flex-wrap">
+                        <div className="flex items-center justify-center w-full gap-4 md:flex-row flex-col">
                             <FaPhoneAlt className="text-primary text-2xl"/>
                             <p className="text-white bg-gray-600 p-2 tex-lg rounded-md px-5">+251-911-791-208</p>
                             <p className="text-white bg-gray-600 p-2 tex-lg rounded-md px-5">+251-955-997-385</p>
                         </div>
-                        <div className="flex items-center justify-center w-full gap-4 flex-wrap">
+                        <div className="flex items-center justify-center w-full gap-4 md:flex-row flex-col">
                             <IoMailSharp className="text-primary text-2xl"/>
                             <p className="text-white bg-gray-600 p-2 tex-lg rounded-md px-5">fevenyehayes@gmail.com</p>
                             <p className="text-white bg-gray-600 p-2 tex-lg rounded-md px-5">yafetmeraya@outlook.com</p>
