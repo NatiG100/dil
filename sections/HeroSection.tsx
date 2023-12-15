@@ -40,7 +40,7 @@ export default function HeroSection(){
                     height={2000}
                     width={2000}
                     alt=""
-                    className="w-[40%] sm:w-[40%] md:w-[60%] lg:w-[100%]"
+                    className="w-[100%] sm:w-[40%] md:w-[60%] lg:w-[100%]"
                     data-aos="fade-left"
                 />
             </div>

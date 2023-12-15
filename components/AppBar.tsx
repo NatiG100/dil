@@ -31,7 +31,7 @@ export default function AppBar(){
                         className="h-14 w-14 bg-blend-difference"
                         
                     />
-                    <button className="block md:hidden text-3xl text-gray-600 hover:text-gray-900 transition-all" onClick={toggleVisibility}>
+                    <button className="block md:hidden text-xl text-gray-600 hover:text-gray-900 transition-all" onClick={toggleVisibility}>
                         <TfiMenu className=""/>
                     </button>
                     <div className="hidden md:flex items-center gap-6 text-primary/70 justify-between text-lg h-full">
