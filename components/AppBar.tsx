@@ -14,7 +14,7 @@ export default function AppBar(){
         <>
             <nav className="
                 w-full fixed top-0 left-0
-                bg-white shadow-md px-6 md:px-16 z-10
+                bg-white shadow-sm px-6 md:px-16 z-10
                 " 
             >
                 <div className="

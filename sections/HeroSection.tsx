@@ -7,7 +7,7 @@ export default function HeroSection(){
     return(
         <Section 
             id="hero" 
-            className="bg-[url('/img/designer.jpeg')] object-cover relative"
+            className=" object-cover relative"
             overlay={
                 <div className="bg-gradient-to-b from-white/80 to-white h-full w-full absolute top-0 left-0 to-80%"></div>
             }
@@ -17,13 +17,13 @@ export default function HeroSection(){
             >
                 <div className="flex flex-col justify-center items-center lg:block">
                     <p 
-                        className="text-2xl md:text-4xl lg:text-6xl text-primary font-bold tracking-widest"
+                        className="text-2xl md:text-4xl lg:text-6xl text-primary font-bold tracking-widest drop-shadow-sm"
                         data-aos="fade-down-right"
                     >
                         DIL Marketing & Events
                     </p>
                     <p 
-                        className="text-normal md:text-xl text-2xl font-light tracking-wide"
+                        className="text-normal md:text-2xl text-2xl font-light tracking-wide"
                         data-aos="fade-right"
                     >
                         Your Motto here
@@ -36,11 +36,11 @@ export default function HeroSection(){
                     </ActionLink>
                 </div>
                 <Image
-                    src="/img/logo.PNG"
-                    height={1200}
-                    width={1200}
+                    src="/img/mk.png"
+                    height={2000}
+                    width={2000}
                     alt=""
-                    className="w-[65%] sm:w-[60%] md:w-[40%]"
+                    className="w-[40%] sm:w-[40%] md:w-[60%] lg:w-[100%]"
                     data-aos="fade-left"
                 />
             </div>
