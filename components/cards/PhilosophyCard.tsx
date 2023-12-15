@@ -12,7 +12,7 @@ export default function PhilosophyCard({icon,text,title,bgMode,idx}:PhilosopyCar
         <div 
             className={` 
                 max-w-[85%] h-screen max-h-[430px] lg:max-h-[520px] xl:max-h-[580px] w-[320px] xl:w-[360px] px-9 flex flex-col items-center justify-center gap-6
-                ${bgMode==="gradient"?"from-[#1AB9CF] to-[#1394B4] bg-gradient-to-br from-40% to-90%":"white"}
+                ${bgMode==="gradient"?"from-[#006a96] to-[#005a86] bg-gradient-to-br from-40% to-90%":"white"}
                 rounded-md shadow-lg border py-8
             `}
             data-aos="flip-right"
