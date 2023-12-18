@@ -21,7 +21,7 @@ export default function Home() {
     AOS.init({duration:500,anchorPlacement:"bottom-center",offset:50})
     AOS.refresh();
   },[])
-  const {displayNav,isScrollAtTop} = useShowNavBar();
+  const {displayNav,isScrollAtTop} = useShowNavBar({topOffset:60});
   return (
     <div className='block h-screen '>
       {displayNav&&<AppBar top={isScrollAtTop}/>}
