@@ -8,9 +8,10 @@ import ServiceSection from '@/sections/ServiceSection'
 import WorkSection from '@/sections/WorkSection'
 import ContactSection from '@/sections/ContactSection'
 import Footer from '@/components/Footer'
-import {useEffect} from 'react'
+import {useEffect,useState} from 'react'
 import AOS from 'aos'
 import "aos/dist/aos.css";
+import useShowNavBar from '@/hooks/useShowNavBar'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -20,9 +21,10 @@ export default function Home() {
     AOS.init({duration:500,anchorPlacement:"bottom-center",offset:50})
     AOS.refresh();
   },[])
+  const {displayNav,isScrollAtTop} = useShowNavBar();
   return (
     <div className='block h-screen '>
-      <AppBar/>
+      {displayNav&&<AppBar top={isScrollAtTop}/>}
       <HeroSection/>
       <AboutUsSection/>
       <PhilosophySection/>
